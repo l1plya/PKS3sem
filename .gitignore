@@ -1,0 +1,14 @@
+.dart_tool/
+.idea/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+build/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/engine.xcframework
+android/.gradle/
+android/.idea/
+**/*.iml
+.DS_Store
