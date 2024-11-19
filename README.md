@@ -6,4 +6,4 @@
 ## Скриншоты:
 
 ### На эмуляторе:
-![Скриншот эмулятора](screenshots/prac_2_screeen1.jpg)
+![Скриншот эмулятора](screenshots/prac_2_screen1.jpg)
