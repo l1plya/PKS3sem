@@ -5,7 +5,7 @@
 
 ## Скриншоты:
 ### В браузере:
-![Скриншот браузера](screenshots/chrome.png)
+![Скриншот браузера](screenshots/chrome.jpg)
 
 ### На эмуляторе:
-![Скриншот эмулятора](screenshots/emulator.png)
+![Скриншот эмулятора](screenshots/android.jpg)
