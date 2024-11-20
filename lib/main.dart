@@ -31,15 +31,21 @@ class Product {
   });
 }
 
-class ProductListScreen extends StatelessWidget {
+class ProductListScreen extends StatefulWidget {
+  @override
+  _ProductListScreenState createState() => _ProductListScreenState();
+}
+
+class _ProductListScreenState extends State<ProductListScreen> {
   final List<Product> products = [
     Product(
       name: 'AMD Ryzen 5 5600 BOX',
       price: '12 999 ₽',
       discountPrice: '11 999 ₽',
-      imageUrl: 'https://c.dns-shop.ru/thumb/st1/fit/320/250/b4f335fe61275d19f1434e767e7d70e7/2be30add633ca3bbfb31fbedac61071833fcb5311690f5f32ca0034561410536.jpg',
+      imageUrl:
+      'https://c.dns-shop.ru/thumb/st1/fit/320/250/b4f335fe61275d19f1434e767e7d70e7/2be30add633ca3bbfb31fbedac61071833fcb5311690f5f32ca0034561410536.jpg',
       description: [
-        'Процессор AMD Ryzen 5 5600 – 6-ядерный чипсет с базовой тактовой частотой 3.5 ГГц, который способен одновременно обрабатывать до 12 вычислительных потоков информации и обеспечивать компьютерную сборку бесперебойной работой в режиме многозадачности. Модель обладает свободным множителем, благодаря которому можно изменять тактовую частоту без изменений частоты системной шины. Процессор AMD Ryzen 5 5600 поддерживает работу с оперативной памятью DDR4 объемом до 128 ГБ. В комплектацию входит система охлаждения и термоинтерфейс.'
+        'Процессор AMD Ryzen 5 5600 – 6-ядерный чипсет с базовой тактовой частотой 3.5 ГГц.'
       ],
     ),
     Product(
@@ -48,7 +54,7 @@ class ProductListScreen extends StatelessWidget {
       imageUrl: 'https://c.dns-shop.ru/thumb/st4/fit/320/250/4f62062c2f24a1a4f25fce78b21d79ba/a60d568636c393c611792fb99f68dd97fb6fe3de90e8bd6f085c7c321e9e32b0.jpg',
       description: [
         'Процессор AMD Ryzen 5 5600X OEM с поддержкой технологии виртуализации обеспечит игровому ПК высокую мощность и производительность. В построении архитектуры чипа применялся 7-нм техпроцесс, благодаря чему оптимизирована скорость выполнения всех операций и энергопотребление. 6 ядер, работающие в 12-поточном режиме, и кэш-память L3 на 32 МБ эффективно взаимодействуют друг с другом, что позволило сократить до минимума задержки обмена данными. Поэтому игрок сможет быстро и четко реагировать на происходящее в игре.'
-        'Рабочая частота процессора AMD Ryzen 5 5600X OEM автоматически повышается с 3.7 до 4.6 ГГц при возрастании нагрузки. За счет свободного множителя есть возможность увеличивать частоту до более высокого значения через утилиту AMD Ryzen Master. Контроллер PCI-E 4.0 обеспечивает высокую скорость передачи данных при подключении модулей памяти, видеокарт и других устройств. Процессор поддерживает работу модулей ОЗУ DDR4-3200, объем которых составляет 128 ГБ.'
+            'Рабочая частота процессора AMD Ryzen 5 5600X OEM автоматически повышается с 3.7 до 4.6 ГГц при возрастании нагрузки. За счет свободного множителя есть возможность увеличивать частоту до более высокого значения через утилиту AMD Ryzen Master. Контроллер PCI-E 4.0 обеспечивает высокую скорость передачи данных при подключении модулей памяти, видеокарт и других устройств. Процессор поддерживает работу модулей ОЗУ DDR4-3200, объем которых составляет 128 ГБ.'
       ],
     ),
     Product(
@@ -57,7 +63,7 @@ class ProductListScreen extends StatelessWidget {
       imageUrl: 'https://c.dns-shop.ru/thumb/st4/fit/500/500/a82971c60b48db822892b0afabf3738a/d18a3d7014f0c3290bcee6491c444640e8d6456022a06d246e7c9b52864c2ca6.jpg.webp',
       description: [
         'Процессор AMD Ryzen 7 3700X OEM отличается высокой мощностью и производительностью, что позволит использовать его для оснащения игровых компьютеров. Выполненный на основе 7-нм техпроцесса, чип имеет 8 ядер Matisse. Они обрабатывают данные в 16 потоков, благодаря чему поддерживается высокая скорость при решении рабочих задач и выполнении действий в играх. Частота процессора варьируется в зависимости от нагрузки в пределах 3.6-4.4 ГГц. Свободный множитель позволит еще увеличить данный показатель.'
-        'К процессору AMD Ryzen 7 3700X OEM можно подключать оперативную память формата DDR4, которая обладает объемом 128 ГБ и рабочей частотой 3200 МГц. Контроллер PCI-E 4.0 обеспечивает быстрый обмен данными между процессором и подключенными модулями. Поддерживаемая технология виртуализации позволяет оптимизировать мощность процессора, используя эмуляторы разных операционных систем и игр. Тепловыделение на уровне 65 Вт предусматривает применение стандартной системы охлаждения.'],
+            'К процессору AMD Ryzen 7 3700X OEM можно подключать оперативную память формата DDR4, которая обладает объемом 128 ГБ и рабочей частотой 3200 МГц. Контроллер PCI-E 4.0 обеспечивает быстрый обмен данными между процессором и подключенными модулями. Поддерживаемая технология виртуализации позволяет оптимизировать мощность процессора, используя эмуляторы разных операционных систем и игр. Тепловыделение на уровне 65 Вт предусматривает применение стандартной системы охлаждения.'],
     ),
     Product(
       name: 'AMD Ryzen 7 5700X OEM',
@@ -80,39 +86,72 @@ class ProductListScreen extends StatelessWidget {
       description: [
         'Процессор AMD Ryzen 9 9900X основан на архитектуре Zen 5 и предлагает высокую производительность и эффективность. Устройство имеет 12 ядер и 24 потока, что делает его оптимальным выбором для многозадачных процессов, игр и других требовательных приложений. Частота его работы способна достигать 5.6 ГГц.'],
     ),
-    Product(
-      name: 'Product 1',
-      price: '',
-      imageUrl: '',
-      description: ['This is the description of Product 1.'],
-    ),
-    Product(
-      name: 'Product 1',
-      price: '',
-      imageUrl: '',
-      description: ['This is the description of Product 1.'],
-    ),
-    Product(
-      name: 'Product 1',
-      price: '',
-      imageUrl: '',
-      description: ['This is the description of Product 1.'],
-    ),
-    Product(
-      name: 'Product 1',
-      price: '',
-      discountPrice: '',
-      imageUrl: '',
-      description: ['This is the description of Product 1.'],
-    ),
-    // Add more products as needed
   ];
+
+  void _deleteProduct(int index) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text("Удаление товара"),
+          content: Text("Вы уверены, что хотите удалить товар?"),
+          actions: [
+            TextButton(
+              child: Text("Отмена"),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: Text("Удалить"),
+              onPressed: () {
+                setState(() {
+                  products.removeAt(index);
+                });
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void _navigateToAddProductScreen() async {
+    final newProduct = await Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => AddProductScreen(),
+      ),
+    );
+
+    if (newProduct != null && newProduct is Product) {
+      setState(() {
+        products.add(newProduct);
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('Процессоры AMD', style: TextStyle(color: Colors.black, fontSize: 28, fontWeight: FontWeight.bold,))),
+        title: Center(
+          child: Text(
+            'Процессоры AMD',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add, color: Colors.black),
+            onPressed: _navigateToAddProductScreen,
+          ),
+        ],
       ),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -125,6 +164,7 @@ class ProductListScreen extends StatelessWidget {
         itemCount: products.length,
         itemBuilder: (context, index) {
           return GestureDetector(
+            onLongPress: () => _deleteProduct(index),
             onTap: () {
               Navigator.push(
                 context,
@@ -206,6 +246,88 @@ class ProductListScreen extends StatelessWidget {
   }
 }
 
+class AddProductScreen extends StatefulWidget {
+  @override
+  _AddProductScreenState createState() => _AddProductScreenState();
+}
+
+class _AddProductScreenState extends State<AddProductScreen> {
+  final _formKey = GlobalKey<FormState>();
+  String _name = '';
+  String _price = '';
+  String _discountPrice = '';
+  String _imageUrl = '';
+  String _description = '';
+
+  void _saveProduct() {
+    if (_formKey.currentState!.validate()) {
+      _formKey.currentState!.save();
+
+      final newProduct = Product(
+        name: _name,
+        price: _price,
+        discountPrice: _discountPrice,
+        imageUrl: _imageUrl,
+        description: [_description],
+      );
+
+      Navigator.of(context).pop(newProduct);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Добавить товар"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration(labelText: "Название товара"),
+                onSaved: (value) => _name = value ?? '',
+                validator: (value) =>
+                value == null || value.isEmpty ? "Введите название" : null,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Цена"),
+                onSaved: (value) => _price = value ?? '',
+                validator: (value) =>
+                value == null || value.isEmpty ? "Введите цену" : null,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Скидочная цена (необязательно)"),
+                onSaved: (value) => _discountPrice = value ?? '',
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "URL изображения"),
+                onSaved: (value) => _imageUrl = value ?? '',
+                validator: (value) =>
+                value == null || value.isEmpty ? "Введите URL изображения" : null,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Описание"),
+                onSaved: (value) => _description = value ?? '',
+                validator: (value) =>
+                value == null || value.isEmpty ? "Введите описание" : null,
+              ),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: _saveProduct,
+                child: Text("Сохранить"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class ProductDetailScreen extends StatelessWidget {
   final Product product;
 
@@ -229,56 +351,22 @@ class ProductDetailScreen extends StatelessWidget {
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 8.0),
-            product.discountPrice.isNotEmpty
-                ? Row(
-              children: [
-                Text(
-                  product.price,
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    color: Colors.grey,
-                    decoration: TextDecoration.lineThrough,
-                  ),
-                ),
-                SizedBox(width: 8.0),
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 4.0, vertical: 2.0),
-                  decoration: BoxDecoration(
-                    color: Colors.orange,
-                    borderRadius: BorderRadius.circular(4.0),
-                  ),
-                  child: Text(
-                    product.discountPrice,
-                    style: TextStyle(
-                      fontSize: 18.0,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ],
-            )
-                : Container(
-              padding: EdgeInsets.symmetric(horizontal: 4.0, vertical: 2.0),
-              decoration: BoxDecoration(
-                color: Colors.grey.shade300,
-                borderRadius: BorderRadius.circular(4.0),
+            Text(product.price + '₽', style: TextStyle(fontSize: 20.0)),
+            if (product.discountPrice.isNotEmpty)
+              Text(
+                "По скидке: ${product.discountPrice}",
+                style: TextStyle(fontSize: 18.0, color: Colors.white, backgroundColor: Colors.orange),
               ),
-              child: Text(
-                product.price,
-                style: TextStyle(fontSize: 18.0, color: Colors.black),
-              ),
-            ),
             SizedBox(height: 16.0),
-            RichText(
-              text: TextSpan(
-                children: product.description.map((paragraph) {
-                  return TextSpan(
-                    text: '$paragraph\n\n',
-                    style: TextStyle(fontSize: 16.0, color: Colors.black),
-                  );
-                }).toList(),
-              ),
+            Text(
+              "Описание:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
+            for (var desc in product.description)
+              Text(
+                desc,
+                style: TextStyle(fontSize: 16.0),
+              ),
           ],
         ),
       ),

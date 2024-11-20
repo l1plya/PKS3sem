@@ -5,6 +5,10 @@
 
 ## Скриншоты:
 
-### На эмуляторе:
-![Скриншот эмулятора](screenshots/prac3_screen1.jpg)
-![](screenshots/prac3_screen2.jpg)
+### На телефоне:
+![Демонстрация удаления](screenshots/prac4_screen1.jpg)
+![](screenshots/prac4_screen2.jpg)
+
+![Демонстрация добавления](screenshots/prac4_screen3.jpg)
+![](screenshots/prac4_screen4.jpg)
+![](screenshots/prac4_screen5.jpg)
